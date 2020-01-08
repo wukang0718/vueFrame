@@ -1,0 +1,30 @@
+/* 定义全局的class文件 */
+.flex-1-width {
+    flex: 1;
+    width: 0;
+    min-width: 0;
+}
+
+.flex-1-height {
+    flex: 1;
+    height: 0;
+    min-height: 0;
+}
+
+.flex-1 {
+    @extend .flex-1-width;
+    @extend .flex-1-height;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.box-100 {
+    @extend .width-100;
+    @extend .height-100;
+}
